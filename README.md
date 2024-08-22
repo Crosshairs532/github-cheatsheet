@@ -9,6 +9,8 @@ Most common github commands every developer use.
 > ```
 > to see all the configs
 > ```git
-> git config --list
+> git config --global --list: all the global  configurations will be shown here
+> git config --local --list: all the local configurations will be shown here. This works only inside a repository
+> git config --system --list: all the local configurations will be shown here. This works only inside a repository
 > ```
   
