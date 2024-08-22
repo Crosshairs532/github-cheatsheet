@@ -7,10 +7,15 @@ Most common github commands every developer use.
 > git config --global user.name [your user name]
 > git config --global user.email [your email address]
 > ```
-> to see all the configs
+> To see all the configs
 > ```git
 > git config --global --list: all the global  configurations will be shown here
 > git config --local --list: all the local configurations will be shown here. This works only inside a repository
 > git config --system --list: all the local configurations will be shown here. This works only inside a repository
+> ```
+> To unset a configuration
+> ```git
+> git config --global --unset user.name
+> git config --global --unset user.email
 > ```
   
