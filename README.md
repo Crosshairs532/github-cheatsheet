@@ -7,4 +7,8 @@ Most common github commands every developer use.
 > git config --global user.name [your user name]
 > git config --global user.email [your email address]
 > ```
+> to see all the configs
+> ```git
+> git config --list
+> ```
   
