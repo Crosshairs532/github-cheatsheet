@@ -26,6 +26,7 @@ Most common github commands every developer use.
 > ```git
 > git add [. , -A, "file name"]
 > git commit -m "any meassge"
+> git commit -am "any message" // add + commit message
 > ```
 > check status 
 > ```git
