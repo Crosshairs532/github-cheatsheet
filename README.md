@@ -27,6 +27,7 @@ Most common github commands every developer use.
 > git add [. , -A, "file name"]
 > git commit -m "any meassge"
 > git commit -am "any message" // add + commit message
+> git commit --amend // append new texts to prev commit. 
 > ```
 > check status 
 > ```git
@@ -53,7 +54,11 @@ Most common github commands every developer use.
 > ```
 > Go back to the specific commit address
 > ```git
-> git checkout "commit id"
+> git checkout "commit id" // jump to checkpoint
+> git checkout "branch name" // jump to different branch
+> git checkout -b "branch name" // create and jump to new branch
+> git switch 'branch name' // jump to different branch
+> git switch -c 'branch name' // create and jump to new branch
 > git revert
 > git reset
 > git clean
