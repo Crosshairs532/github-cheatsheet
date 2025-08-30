@@ -33,9 +33,16 @@ Most common github commands every developer use.
 > ```git
 > git status
 > ```
-> The file I want to restore. basically, it will go back to the previous stage from staging
+> restore
 > ```git
+> // The file I want to restore. basically, it will go back to the previous stage from staging
 > git restore "file name"
+> git restore --staged 'file name' // discard changes from the staging area 
+> git restore --staged --wroktree . //
+> git restore . // discard changes from the working directory
+> git restore --stages --worktree . // discard changes from the working directory + staging
+> git restore --source='commit' . //
+> git restore --source=HEAD~[1,2,3] // restore the filed in a particular commit from the head. 
 > ```
 > To Check Difference between the files that has been commited
 > ```git
