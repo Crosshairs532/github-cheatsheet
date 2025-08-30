@@ -44,6 +44,15 @@ Most common github commands every developer use.
 > git restore --source='commit' . //
 > git restore --source=HEAD~[1,2,3] // restore the filed in a particular commit from the head. 
 > ```
+> reset
+> ```git
+> // suppose i commited some changes. now i want to have changes my mind i want to reset the commit
+> git reset // reset from staged to unstaged. 
+> git reset --soft HEAD~[1,2....] // undo the commit // currently on staging -> then we can commit. 
+> git reset --mixed HEAD~[1,2...] // undo the commit => staging // need to add to go to staging -> then we can commit. 
+> git reset HEAD^
+> git reset --hard HEAD~[1,2....] //undo the commit  + staging + delete the changes from the local file. 
+> ```
 > To Check Difference between the files that has been commited
 > ```git
 > git diff
@@ -53,12 +62,6 @@ Most common github commands every developer use.
 > git log
 > git log --oneline
 > ```
-> To reset commit
-> ```git
-> git reset --soft HEAD^
-> git reset HEAD^
-> git reset --hard HEAD^
-> ```
 > Go back to the specific commit address
 > ```git
 > git checkout "commit id" // jump to checkpoint
@@ -66,8 +69,7 @@ Most common github commands every developer use.
 > git checkout -b "branch name" // create and jump to new branch
 > git switch 'branch name' // jump to different branch
 > git switch -c 'branch name' // create and jump to new branch
-> git revert
-> git reset
+> git revert // undo 
 > git clean
 > git rm
 > ```
