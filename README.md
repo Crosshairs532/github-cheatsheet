@@ -73,6 +73,28 @@ Most common github commands every developer use.
 > git show
 > git show HEAD
 > git show "commit id"
+>```
+> stash
+> ```git
+> // i am working in a directory
+> // i want to swtich to a new branch
+> // but i dont want modified file to go to the new branch
+> // We use git stash
+>
+> git stash // save the current modifiel files to somewhere. 
+> git stash list // see all the stashed list.
+> git stash pop // bring back what we saved
+> git stash apply 'select the partcular stash from the list' // stash wont get popped + we can use the stashed files
+> git stash drop 'select the partcular stash from the list' // drop stash from the list
+> git stash clear // delete all the stashes
+> git stash -- 'partical file' // we can stash single file
+> git stash -m 'any message' -- 'particular file' // we can also send messages
+> git stash show 'stage name'
+> git stash show -p 'stage name'
+>  git stash --keep-index // stash only the unstracked files
+> git stash --include-untracked // stash the untracked files also 
+> 
+> ```
 # 3. Git Aliases
 > alias."some name" "For which git command it want the alias for"
 > ```git
