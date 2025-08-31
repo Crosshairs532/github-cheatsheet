@@ -46,13 +46,27 @@ Most common github commands every developer use.
 > ```
 > reset
 > ```git
-> // suppose i commited some changes. now i want to have changes my mind i want to reset the commit
+> // suppose i commited some changes. now i want to have changed my mind and i want to reset the commit
 > git reset // reset from staged to unstaged. 
 > git reset --soft HEAD~[1,2....] // undo the commit // currently on staging -> then we can commit. 
 > git reset --mixed HEAD~[1,2...] // undo the commit => staging // need to add to go to staging -> then we can commit. 
 > git reset HEAD^
 > git reset --hard HEAD~[1,2....] //undo the commit  + staging + delete the changes from the local file. 
 > ```
+> rebase
+> ```git
+> A -> B main
+> \ 
+>   C - D feature
+>
+> A -> B -> c-> D linear
+>
+> from main
+> git rebase feature 
+>
+> 
+> ```
+> 
 > To Check Difference between the files that has been commited
 > ```git
 > git diff
@@ -61,6 +75,8 @@ Most common github commands every developer use.
 > ```git
 > git log
 > git log --oneline
+> git log --oneline --all --graph
+> git --no-pager log -n 'any number' // any number of commit we want to see
 > ```
 > Go back to the specific commit address
 > ```git
@@ -69,7 +85,7 @@ Most common github commands every developer use.
 > git checkout -b "branch name" // create and jump to new branch
 > git switch 'branch name' // jump to different branch
 > git switch -c 'branch name' // create and jump to new branch
-> git revert // undo 
+> git revert // undo a commit and create a new commit.
 > git clean
 > git rm
 > ```
@@ -100,7 +116,7 @@ Most common github commands every developer use.
 > git stash -m 'any message' -- 'particular file' // we can also send messages
 > git stash show 'stage name'
 > git stash show -p 'stage name'
->  git stash --keep-index // stash only the unstracked files
+> git stash --keep-index // stash only the unstracked files
 > git stash --include-untracked // stash the untracked files also 
 > 
 > ```
