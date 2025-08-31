@@ -120,6 +120,17 @@ Most common github commands every developer use.
 > git stash --include-untracked // stash the untracked files also 
 > 
 > ```
+> fetch & pull
+> ```git
+>  git branch -r // see all the branches of the remote repo
+>
+> git pull = git fetch + git merge
+> git pull --ff-only
+> git pull --ff // download  + basic merge 
+> git pull --rebase
+> 
+> ```
+
 # 3. Git Aliases
 > alias."some name" "For which git command it want the alias for"
 > ```git
