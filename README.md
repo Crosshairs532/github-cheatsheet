@@ -48,8 +48,8 @@ Most common github commands every developer use.
 > ```git
 > // suppose i commited some changes. now i want to have changed my mind and i want to reset the commit
 > git reset // reset from staged to unstaged. 
-> git reset --soft HEAD~[1,2....] // undo the commit // currently on staging -> then we can commit. 
-> git reset --mixed HEAD~[1,2...] // undo the commit => staging // need to add to go to staging -> then we can commit. 
+> git reset --soft HEAD~[1,2....] // undo the commit =>  currently on staging -> then we can commit. 
+> git reset --mixed HEAD~[1,2...] // undo the commit +  unstage // need to `add .` to go to staging -> then we can commit. 
 > git reset HEAD^
 > git reset --hard HEAD~[1,2....] //undo the commit  + staging + delete the changes from the local file. 
 > ```
