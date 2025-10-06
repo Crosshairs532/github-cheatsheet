@@ -75,6 +75,8 @@ Most common github commands every developer use.
 > ```git
 > git log
 > git log --oneline
+> git log -p // see code changes on commit
+> git log --stat // details of changes on commit 
 > git log --oneline --all --graph
 > git --no-pager log -n 'any number' // any number of commit we want to see
 > ```
