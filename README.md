@@ -20,6 +20,13 @@ Most common github commands every developer use.
 > git config --global --unset user.email
 > ```
 # 2. `Git Basic Commands`
+> Working with remote repo
+> ```git
+> git remote add origin <url>
+> git push -u origin main/ master
+> git clone <url> 
+> ```
+>
 > ```git
 > git init
 > ```
@@ -126,8 +133,7 @@ Most common github commands every developer use.
 > fetch & pull
 > ```git
 >  git branch -r // see all the branches of the remote repo
->
-> git pull = git fetch + git merge
+> git pull origin main/master  // = git fetch + git merge
 > git pull --ff-only
 > git pull --ff // download  + basic merge 
 > git pull --rebase
@@ -143,6 +149,11 @@ Most common github commands every developer use.
 > git branch -d <name> // delete a specific branch
 > git branch -D <branch > // delete a specific branch 
 > git merge <branch> // 
+> ```
+> Tagging
+> ```git
+> git tag -a v1.0.0 <commit id>
+> 
 > ```
 # 3. Git Aliases
 > alias."some name" "For which git command it want the alias for"
