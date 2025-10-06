@@ -76,8 +76,9 @@ Most common github commands every developer use.
 > git log
 > git log --oneline
 > git log -p // see code changes on commit
-> git log --stat // details of changes on commit 
-> git log --oneline --all --graph
+> git log --stat // details of changes on commit
+> git log --oneline --all // see all commits from all branches
+> git log --oneline --all --graph // graph of all commits from all branches
 > git --no-pager log -n 'any number' // any number of commit we want to see
 > ```
 > Go back to the specific commit address
@@ -132,7 +133,17 @@ Most common github commands every developer use.
 > git pull --rebase
 > 
 > ```
-
+> Branching & Mergin
+> ```git
+> git branch // see all the branch 
+> git branch <name> // creates a new branch
+> git branch <name> <sha id> // creates a new branch after specific commit id(sha id)
+> git checkout <name> // move to another branch
+> git checkout -b <name> // create branch and move to it
+> git branch -d <name> // delete a specific branch
+> git branch -D <branch > // delete a specific branch 
+> git merge <branch> // 
+> ```
 # 3. Git Aliases
 > alias."some name" "For which git command it want the alias for"
 > ```git
